@@ -18,7 +18,7 @@ Raw extraction: **complete for both books** (10 files, all under `claude/modern-
 
 ## 3. Raw-extraction files produced (10)
 
-All under `claude/modern-history-raw/`. Format follows the Ancient/Medieval precedent: header (Batch note, Sources, Structure note) → **Part A** (Parmar, verbatim, page by page) → **Part B** (Lucent verbatim, or a pointer list where the Lucent text is already transcribed in another file) → **Part C** (cross-book comparison / discrepancies). Deliberately **no** "Test cross-reference index" section (added later once tests are attempted).
+All under `claude/modern-history-raw/`. Format follows the Ancient/Medieval precedent: header (Batch note, Sources, Structure note) → **Part A** (Parmar, verbatim, page by page) → **Part B** (Lucent verbatim, or a pointer list where the Lucent text is already transcribed in another file) → **Part C** (cross-book comparison / discrepancies). Deliberately **no** "Test cross-reference index" section (added later once tests are attempted). all of them are merged in one md file noe. attached in this repository itself
 
 | # | File | Parmar | Lucent |
 |---|---|---|---|

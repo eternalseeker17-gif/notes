@@ -87,15 +87,7 @@ def combine(out_pdf, html_files):
         tmp = hf.rsplit(".", 1)[0] + "_tmp_combine.pdf"
         render_pdf(hf, tmp)
         tmp_pdfs.append(tmp)
-    try:
-        from pypdf import PdfWriter
-        writer = PdfWriter()
-        for tp in tmp_pdfs:
-            writer.append(tp)
-        with open(out_pdf, "wb") as f:
-            writer.write(f)
-    except ImportError:
-        subprocess.run(["pdfunite"] + tmp_pdfs + [out_pdf], check=True)
+    subprocess.run(["pdfunite"] + tmp_pdfs + [out_pdf], check=True)
     for tp in tmp_pdfs:
         os.remove(tp)
     print(f"Combined {len(html_files)} files -> {out_pdf}")
